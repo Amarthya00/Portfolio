@@ -264,17 +264,6 @@ function Hero() {
             </a>
           </div>
         </div>
-
-        <div className="fade-up hidden md:flex md:justify-end">
-          <div className="group relative">
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 blur-xl transition-all duration-500 group-hover:blur-2xl group-hover:from-primary/40 group-hover:to-accent/40" />
-            <img
-              src="/profile.jpg"
-              alt="Thirunahari Amarthya"
-              className="relative h-80 w-80 rounded-2xl border-2 border-primary/30 object-cover shadow-2xl transition-all duration-500 group-hover:border-primary/60 group-hover:shadow-[0_0_30px_rgba(69,164,245,0.4)] group-hover:-translate-y-2"
-            />
-          </div>
-        </div>
       </div>
 
       <div className="fade-up mt-14 grid grid-cols-2 gap-4 border-t border-border pt-8 font-mono text-xs sm:grid-cols-4">
