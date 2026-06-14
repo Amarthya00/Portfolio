@@ -9,7 +9,7 @@
       }
     },
     {
-      "src": "api/[...all].js",
+      "src": "api/handler.js",
       "use": "@vercel/node"
     }
   ],
