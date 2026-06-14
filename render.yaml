@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: Amarthya Portfolio
+    env: node
+    plan: starter
+    branch: master
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars: []
