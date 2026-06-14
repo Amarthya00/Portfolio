@@ -20,7 +20,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/api/[[...all]].js"
+      "dest": "/api/handler.js"
     }
   ]
 }
