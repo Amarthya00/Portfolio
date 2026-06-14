@@ -229,37 +229,52 @@ function Nav() {
 function Hero() {
   return (
     <section id="top" className="relative flex min-h-[88vh] flex-col justify-center py-20">
-      <p className="fade-up font-mono text-sm text-primary">WHO AM I</p>
-      <h1 className="fade-up mt-4 font-sans text-5xl font-bold leading-[1.05] tracking-tight md:text-7xl">
-        Thirunahari <br />
-        <span className="text-gradient">Amarthya.</span>
-      </h1>
-      <p className="fade-up mt-6 max-w-2xl font-mono text-sm text-muted-foreground md:text-base">
-        <span className="text-accent">const</span> role ={" "}
-        <span className="text-primary">"Software Engineer"</span>;
-      </p>
-      <p className="fade-up mt-3 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-        A Computer Science engineer who builds <span className="text-foreground">full-stack web applications</span>{" "}
-        and <span className="text-foreground">AI-powered systems</span>. I care about clean code, intuitive
-        interfaces and scalable architecture.
-        <span className="caret ml-1 h-5 align-middle" />
-      </p>
+      <div className="grid gap-12 md:grid-cols-2 md:items-center">
+        <div>
+          <p className="fade-up font-mono text-sm text-primary">WHO AM I</p>
+          <h1 className="fade-up mt-4 font-sans text-5xl font-bold leading-[1.05] tracking-tight md:text-7xl">
+            Thirunahari <br />
+            <span className="text-gradient">Amarthya.</span>
+          </h1>
+          <p className="fade-up mt-6 max-w-2xl font-mono text-sm text-muted-foreground md:text-base">
+            <span className="text-accent">const</span> role ={" "}
+            <span className="text-primary">"Software Engineer"</span>;
+          </p>
+          <p className="fade-up mt-3 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
+            A Computer Science engineer who builds <span className="text-foreground">full-stack web applications</span>{" "}
+            and <span className="text-foreground">AI-powered systems</span>. I care about clean code, intuitive
+            interfaces and scalable architecture.
+            <span className="caret ml-1 h-5 align-middle" />
+          </p>
 
-      <div className="fade-up mt-10 flex flex-wrap gap-3">
-        <a
-          href="#projects"
-          className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 font-mono text-sm font-medium text-primary-foreground transition-transform hover:-translate-y-0.5"
-        >
-          view_projects() <ArrowUpRight className="h-4 w-4" />
-        </a>
-        <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=amarthya00@gmail.com"
-          target="_blank"
-          rel="noreferrer noopener"
-          className="inline-flex items-center gap-2 rounded-md border border-border bg-card px-5 py-3 font-mono text-sm transition-colors hover:border-primary/50 hover:text-primary"
-        >
-          <Mail className="h-4 w-4" /> get_in_touch()
-        </a>
+          <div className="fade-up mt-10 flex flex-wrap gap-3">
+            <a
+              href="#projects"
+              className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 font-mono text-sm font-medium text-primary-foreground transition-transform hover:-translate-y-0.5"
+            >
+              view_projects() <ArrowUpRight className="h-4 w-4" />
+            </a>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=amarthya00@gmail.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="inline-flex items-center gap-2 rounded-md border border-border bg-card px-5 py-3 font-mono text-sm transition-colors hover:border-primary/50 hover:text-primary"
+            >
+              <Mail className="h-4 w-4" /> get_in_touch()
+            </a>
+          </div>
+        </div>
+
+        <div className="fade-up hidden md:flex md:justify-end">
+          <div className="group relative">
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 blur-xl transition-all duration-500 group-hover:blur-2xl group-hover:from-primary/40 group-hover:to-accent/40" />
+            <img
+              src="/profile.jpg"
+              alt="Thirunahari Amarthya"
+              className="relative h-80 w-80 rounded-2xl border-2 border-primary/30 object-cover shadow-2xl transition-all duration-500 group-hover:border-primary/60 group-hover:shadow-[0_0_30px_rgba(69,164,245,0.4)] group-hover:-translate-y-2"
+            />
+          </div>
+        </div>
       </div>
 
       <div className="fade-up mt-14 grid grid-cols-2 gap-4 border-t border-border pt-8 font-mono text-xs sm:grid-cols-4">
